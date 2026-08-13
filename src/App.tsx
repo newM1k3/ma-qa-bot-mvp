@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import { Activity, Bot, CircleHelp, Github, Radio, Settings2 } from 'lucide-react';
+import { Activity, Bot, CircleHelp, GitBranch, Radio, Settings2 } from 'lucide-react';
 import { CommandCenter } from '@/components/CommandCenter';
 import { OutputLog } from '@/components/OutputLog';
 import { PERSONAS } from '@/personas';
@@ -98,7 +98,7 @@ function App() {
 
         <footer className="mt-8 flex flex-col items-start justify-between gap-3 border-t border-slate-800/80 pt-5 text-[11px] text-slate-600 sm:flex-row sm:items-center">
           <span>MA-QA-Bot is an experimental testing surface. Always verify findings before shipping.</span>
-          <span className="flex items-center gap-1.5"><Github className="h-3.5 w-3.5" /> Built for the MJW App Platform</span>
+          <span className="flex items-center gap-1.5"><GitBranch className="h-3.5 w-3.5" /> Built for the MJW App Platform</span>
         </footer>
       </main>
     </div>

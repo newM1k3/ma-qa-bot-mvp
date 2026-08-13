@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Github, Loader2, Play, ShieldCheck } from 'lucide-react';
+import { GitBranch, Loader2, Play, ShieldCheck } from 'lucide-react';
 import { PersonaSelector } from '@/components/PersonaSelector';
 import type { PersonaId } from '@/types';
 
@@ -60,7 +60,7 @@ export function CommandCenter({
                   : 'border-slate-700 focus-within:border-slate-500',
             ].join(' ')}
           >
-            <Github className="h-4 w-4 shrink-0 text-slate-500" />
+            <GitBranch className="h-4 w-4 shrink-0 text-slate-500" />
             <input
               id="repo-url"
               type="url"
