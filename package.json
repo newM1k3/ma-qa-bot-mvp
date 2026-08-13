@@ -1,17 +1,18 @@
 {
-  "name": "vite-react-typescript-starter",
+  "name": "ma-qa-bot-mvp",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "typecheck": "tsc --noEmit -p tsconfig.app.json"
+    "typecheck": "tsc --noEmit -p tsconfig.app.json",
+    "check": "npm run lint && npm run typecheck && npm run build"
   },
   "dependencies": {
-    "lucide-react": "^0.446.0",
+    "lucide-react": "^1.31.0",
     "pocketbase": "^0.27.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
@@ -31,5 +32,10 @@
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.3.0",
     "vite": "^5.4.2"
+  },
+  "description": "A prototype command centre for role-based GitHub repository quality reviews.",
+  "engines": {
+    "node": ">=20 <25",
+    "npm": ">=10"
   }
 }
